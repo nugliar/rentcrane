@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141781962-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-141781962-1');
+      gtag('config', 'AW-959834032');
+    </script>
+
+    <!-- Event snippet for Button click conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-959834032/0CSsCLmdlaIBELDP18kD',
+            'transaction_id': '',
+            'event_callback': callback
+        });
+        return false;
+      }
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Аренда автокрана</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <ul>
+          <li><a href="#showcase">Услуги</a></li>
+          <li><a href="#vehicles">Техника</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </div> <!-- navigation bar -->
+
+      <div id="showcase" class="section">
+        <div class="image"></div>
+        <div class="section-content">
+          <div class="light-text">
+            <p>Аренда спецтехники в Казани</p>
+          </div>
+          <div class="btn">
+            <i class="fas fa-phone"></i>
+            <a onclick="gtag_report_conversion" href="tel:+79625620330">Позвонить</a>
+          </div>
+        </div>
+      </div> <!-- showcase -->
+
+        <div id="vehicles" class="section">
+          <div class="image"></div>
+          <div class="section-content">
+            <div class="light-text">
+              <p>Автокраны на базе КамАЗ</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="operators" class="section">
+          <div class="image"></div>
+          <div class="section-content">
+            <div class="light-text">
+              <p>Машинисты 6-го разряда с большим стажем работы выполнят работу быстро и качественно</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="discount" class="section">
+          <div class="image"></div>
+          <div class="section-content">
+            <div class="light-text">
+              <p>Скидки при аренде на длительный срок</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="contacts" class="section">
+          <div class="image"></div>
+          <div class="section-content">
+            <div class="light-text">
+              <p>962-562-03-30</p>
+            </div>
+          </div>
+        </div>
+    </div> <!-- container -->
+
+    <script type="text/javascript" src="main.js"></script>
+
+  </body>
+</html>
